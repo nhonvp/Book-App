@@ -7,7 +7,8 @@ import {
   StyleSheet,
   Text,
   useColorScheme,
-  View,Button
+  View,
+  Button,
 } from 'react-native';
 import RootNavigator from './src/navigation/RootNavigator';
 import {OriginContextProvider} from './src/context/OriginContext';
@@ -16,11 +17,10 @@ import {DestinationContextProvider} from './src/context/DestinationContext';
 const App = () => {
   return (
     <DestinationContextProvider>
-    <OriginContextProvider>
-      <RootNavigator/>
-    </OriginContextProvider>
+      <OriginContextProvider>
+        <RootNavigator />
+      </OriginContextProvider>
     </DestinationContextProvider>
-    
   );
 };
 
